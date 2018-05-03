@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.startup.naveen.trackcustomer.Main3Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textSize="4mm"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/bb"
+        android:text="Done"
+        android:background="#fcec0f"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="260dp"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/tableLayout">
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer name:"
+            android:textStyle="bold"
+            android:textSize="3mm"
+            android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Naveen"
+                android:id="@+id/e1"
+                android:textStyle="italic"
+                android:textSize="3mm"
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked seats:"
+                android:textStyle="bold"
+                android:textSize="3mm"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="no-of-seats"
+                android:id="@+id/eee"
+                android:textStyle="italic"
+                android:textSize="3mm"
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Ordered :-"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        </TableRow>
+    </TableLayout>
+        <ScrollView
+            android:layout_marginTop="170dp"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_alignStart="@+id/tableLayout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll">
+
+                </LinearLayout>
+            </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_below="@+id/l1"
+        android:id="@+id/b1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#fcec0f"
+        android:text="Track Customer"/>
+
+</RelativeLayout>
